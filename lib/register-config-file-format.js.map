@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "register-config-file-format.js",
+  "sourceRoot": "../src/",
+  "sources": [
+    "register-config-file-format.coffee"
+  ],
+  "names": [],
+  "mappings": "AAAA;AAAA,MAAA;;EAAA,UAAA,GAAa,OAAA,CAAQ,kBAAR;;EACb,IAAA,GAAQ,OAAA,CAAQ,SAAR;;EACR,IAAA,GAAQ,OAAA,CAAQ,MAAR;;EAGR,UAAU,CAAC,QAAX,CAAoB,CAAC,OAAD,EAAU,MAAV,CAApB,EAAuC,IAAI,CAAC,QAA5C;;EACA,UAAU,CAAC,QAAX,CAAoB,OAApB,EAA6B,IAAI,CAAC,eAAe,CAAC,IAArB,CAA0B,IAA1B,CAA7B;;EACA,UAAU,CAAC,QAAX,CAAoB,OAApB,EAA6B,IAAI,CAAC,KAAlC;AAPA"
+}
