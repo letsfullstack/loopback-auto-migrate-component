@@ -7,7 +7,7 @@ Original Author: Riceball LEE - snowyu.lee@gmail.com
 
 Updated Author: Let's Comunica - fabio@letscomunica.com.br
 
-**LAST VERSION: 0.3.0**
+**LAST VERSION: 0.0.1**
 
 Installation
 -------
@@ -105,7 +105,7 @@ $ git push origin vX.X.X  # Version needs to be the same from commit
   npm install --save git+ssh://git@bitbucket.org/letscomunicadev/loopback-lets-auto-migrate-component.git#vX.X.X
 ```
 
-History
+Original History
 -------
 
 ### v0.3.0
