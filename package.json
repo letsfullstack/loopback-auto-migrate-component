@@ -1,28 +1,38 @@
 {
-  "name": "loopback-component-auto-migrate",
+  "name": "loopback-lets-auto-migrate-component",
   "description": "migrate the database and import datas automatcally for the loopback application.",
-  "version": "0.3.0",
+  "version": "0.0.2",
   "author": {
-    "name": "Riceball LEE",
-    "email": "snowyu.lee@gmail.com",
-    "url": "https://github.com/snowyu"
+    "name": "Lets Comunica",
+    "email": "fabio@letscomunica.com.br",
+    "url": "https://bitbucket.org/letscomunicadev/"
   },
   "contributors": [
     {
       "name": "Riceball LEE",
       "email": "snowyu.lee@gmail.com",
       "url": "https://github.com/snowyu"
+    },
+    {
+      "name": "Lets Comunica",
+      "email": "fabio@letscomunica.com.br",
+      "url": "https://bitbucket.org/letscomunicadev/"
     }
   ],
   "maintainers": [
     {
       "name": "Riceball LEE",
       "email": "snowyu.lee@gmail.com"
+    },
+    {
+      "name": "Lets Comunica",
+      "email": "fabio@letscomunica.com.br",
+      "url": "https://bitbucket.org/letscomunicadev/"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/snowyu/loopback-component-auto-migrate.js.git"
+    "url": "https://bitbucket.org/letscomunicadev/loopback-lets-auto-migrate-component"
   },
   "keywords": [
     "loopback",
@@ -35,7 +45,7 @@
   "bugs": {
     "url": "https://github.com/snowyu/loopback-component-auto-migrate.js/issues"
   },
-  "homepage": "https://github.com/snowyu/loopback-component-auto-migrate.js",
+  "homepage": "https://bitbucket.org/letscomunicadev/loopback-lets-auto-migrate-component",
   "files": [
     "README.md",
     "LICENSE-MIT",
