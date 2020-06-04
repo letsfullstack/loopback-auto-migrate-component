@@ -1,7 +1,7 @@
 {
   "name": "@letsfullstack/loopback-auto-migrate-component",
   "description": "Migrate the database and import datas automatcally for the loopback application.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Riceball LEE",
     "email": "snowyu.lee@gmail.com",
