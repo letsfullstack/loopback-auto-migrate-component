@@ -10,4 +10,4 @@ loadConfig  = loadConfig.load
 
 # load Models synchronously from a file
 module.exports = (app, folder) ->
-  return JSON.parse fs.readFileSync path.resolve(folder), 'utf8'
+    return JSON.parse fs.readFileSync path.resolve(folder), 'utf8'

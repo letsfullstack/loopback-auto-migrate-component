@@ -1,21 +1,35 @@
-Component AutoMigrate from Boot Loopback Component
-=============
+![Publish Github Package](https://github.com/letsfullstack/loopback-auto-migrate-component/workflows/Publish%20Github%20Package/badge.svg)
+
+# AutoMigrate from Boot Loopback Component
 
 This loopback component enables you to migrate the database and import datas automatcally for the loopback application.
 
-Original Author: Riceball LEE - snowyu.lee@gmail.com
+Original Author: Riceball Lee
 
-Updated Author: Let's Comunica - fabio@letscomunica.com.br
+Node version used for development: **v10.13.0**
 
-**LAST VERSION: 0.0.2**
+## Contributing
 
-Installation
--------
+:boom: In case you are making a commit for this package repository, **MAKE SURE TO READ AND UNDERSTAND THE FOLLOWING TOPICS**:
+
+1\. Every commit that runs on the [master branch](https://github.com/letsfullstack/loopback-auto-migrate-component/tree/master) runs through the Publish Github Package Workflow on Github Actions. So **be sure to check if your code is well written and tested**, since it'll be published if the code passes the Continuous Integration (CI) unit tests.
+
+2\. If the commit passes through the Github Actions workflow, the module will be released as a package in the Github Packages Registry. This workflow has an [underlying command](https://github.com/phips28/gh-action-bump-version) that **increments/bumps the version from the latest release based on commit messages**, such as:
+
+- If the string "BREAKING CHANGE" or "major" is found anywhere in any of the commit messages or descriptions, the **major version** will be incremented (i.e. 1.X.X).
+
+- If a commit message begins with the string "feat" or includes "minor" then the **minor version** will be increased (i.e. X.1.X). This works for most common commit metadata for feature additions: "feat: new API" and "feature: new API".
+
+- All other changes will increment the **patch version** (i.e. X.X.1).
+
+3\. Furthermore, the workflow has also an underlying command that deploys automatically a new release when a success test/deployment takes places. These releases can be found [here](https://github.com/letsfullstack/loopback-auto-migrate-component/releases).
+
+## Installation
 
 1. Install in you loopback project:
 
-```bash
-  npm install --save git+ssh://git@bitbucket.org/letscomunicadev/loopback-lets-auto-migrate-component.git#v0.0.1
+```shell
+$ npm install @letsfullstack/loopback-automigrate-component
 ```
 
 2. Create a component-config.json file in your server folder (if you don't already have one)
@@ -51,11 +65,9 @@ Installation
       * yaml
       * json
 
+## Usage
 
-Usage
--------
-
-#### Automatically use it:
+### Automatically use it:
 
 Just enable it on `component-config.json`.
 
@@ -71,60 +83,9 @@ Also the `loopback-component-auto-migrate-status` will be set for convenience:
   * 'failed': autoMigrate failed.
   * 'done': autoMigrate successful.
 
-#### Manually use it:
+### Manually use it:
 
 ```js
-
 autoMigrate = require('loopback-component-auto-migrate/lib/auto-migrate');
 autoMigrate(app, {models:['Role'], fixtures: 'yourDataFolder'}).then()
-
 ```
-
-Updates
--------
-
-Made a modification? Test it at least in one project before submiting a version. It still needs unit testing and CI with projects. After everything seems perfectly up-to-date, run the following steps:
-
-1\. Commit and push your updates using Let's Bitbucket credentials
-
-2\. Change and commit a new tag version (always check and update the last version here and in package.json):
-
-```bash
-$ git tag -a vX.X.X -m "version_message"
-```
-
-3\. Push the new tag version to remote repository:
-
-```bash
-$ git push origin vX.X.X  # Version needs to be the same from commit
-```
-
-4\. Run npm installation with the newest version:
-
-```bash
-  npm install --save git+ssh://git@bitbucket.org/letscomunicadev/loopback-lets-auto-migrate-component.git#vX.X.X
-```
-
-Fork History
--------
-
-### v0.0.2
-
-+ changed package.json module details.
-
-### v0.0.1
-
-+ added load models option from JSON file.
-
-Original History
--------
-
-### v0.2.3
-
-+ attaching done Promise at the app.
-
-### v0.2.0
-
-+ hasMany relation data supports.
-
-

@@ -1,0 +1,9 @@
+{ 
+    "extends": ["plugin:@fellow/coffee/recommended"],
+    "plugins": [
+      "@fellow/coffee",
+    ],
+    "rules": {
+      "@fellow/coffee/cyclomatic-complexity": 0
+    }
+}

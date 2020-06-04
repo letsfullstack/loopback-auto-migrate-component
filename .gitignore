@@ -1,0 +1,11 @@
+.vscode
+.idea
+.DS_Store
+.nyc_output
+package-lock.json
+npm-debug.log
+node_modules
+coverage
+db.json
+.cache
+lib

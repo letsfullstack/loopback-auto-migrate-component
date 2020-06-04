@@ -1,39 +1,26 @@
 {
-  "name": "loopback-lets-auto-migrate-component",
-  "description": "migrate the database and import datas automatcally for the loopback application.",
+  "name": "@letsfullstack/loopback-auto-migrate-component",
+  "description": "Migrate the database and import datas automatcally for the loopback application.",
   "version": "0.0.2",
   "author": {
-    "name": "Lets Comunica",
-    "email": "fabio@letscomunica.com.br",
-    "url": "https://bitbucket.org/letscomunicadev/"
+    "name": "Riceball LEE",
+    "email": "snowyu.lee@gmail.com",
+    "url": "https://github.com/snowyu"
   },
   "contributors": [
     {
-      "name": "Riceball LEE",
-      "email": "snowyu.lee@gmail.com",
-      "url": "https://github.com/snowyu"
-    },
-    {
-      "name": "Lets Comunica",
-      "email": "fabio@letscomunica.com.br",
-      "url": "https://bitbucket.org/letscomunicadev/"
+      "name": "Lets Go",
+      "email": "contato@letscomunica.com.br",
+      "url": "https://github.com/letsfullstack"
     }
   ],
   "maintainers": [
     {
-      "name": "Riceball LEE",
-      "email": "snowyu.lee@gmail.com"
-    },
-    {
-      "name": "Lets Comunica",
-      "email": "fabio@letscomunica.com.br",
-      "url": "https://bitbucket.org/letscomunicadev/"
+      "name": "Lets Go",
+      "email": "contato@letscomunica.com.br"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://bitbucket.org/letscomunicadev/loopback-lets-auto-migrate-component"
-  },
+  "repository": "git://github.com/letsfullstack/loopback-auto-migrate-component.git",
   "keywords": [
     "loopback",
     "strongloop",
@@ -43,9 +30,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/snowyu/loopback-component-auto-migrate.js/issues"
+    "url": "https://github.com/letsfullstack/loopback-auto-migrate-component/issues"
   },
-  "homepage": "https://bitbucket.org/letscomunicadev/loopback-lets-auto-migrate-component",
+  "homepage": "https://github.com/letsfullstack/loopback-auto-migrate-component",
   "files": [
     "README.md",
     "LICENSE-MIT",
@@ -61,7 +48,9 @@
     "slc-migrate": "./bin/migrate.js"
   },
   "scripts": {
-    "prepublish": "grunt build",
+    "prepublish": "eslint ./src/*.coffee && grunt build",
+    "build": "grunt build",
+    "lint": "eslint ./src/*.coffee",
     "test": "grunt test",
     "test-cov": "mocha --reporter dot && istanbul report text-summary lcovonly"
   },
@@ -78,9 +67,11 @@
     "loopback": ">=2.25.0"
   },
   "devDependencies": {
+    "@fellow/eslint-plugin-coffee": "^0.4.13",
     "chai": "~3.5.0",
     "coffee-coverage": "^2.0.1",
     "coffee-script": "^1.12.5",
+    "eslint": "6.8.0",
     "grunt": "~1.0.1",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-coffee": "^1.0.0",
@@ -98,5 +89,8 @@
     "shasum": "^1.0.2",
     "sinon": "^2.1.0",
     "sinon-chai": "^2.9.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
